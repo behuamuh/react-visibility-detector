@@ -40,6 +40,25 @@ function MyComponent (props) {
     </VisibilityDetector>
   );
 }
+
+// with hook
+
+import { useChangeVisibility } from 'react-visibility-detector';
+
+function onVisibilityChange ({ visible, directionX, directionY }) {
+  console.log('Element is now %s', visible ? 'visible' : 'hidden');
+  console.log('Horizontal direction %s', directionX); // left, right, or none if no changed or initial
+  console.log('Vertical direction %s', directionY); // up, down or none if no changed or initial
+}
+
+function MyComponent (props) {
+  const targetRef = useRef(null);
+  useChangeVisibility({ targetRef, onVisibilityChange });
+
+  return (
+    <div ref={targetRef}>...content goes here...</div>
+  );
+}
 ```
 
 Props
@@ -49,6 +68,13 @@ Props
 - `distance` - distance to the viewport at which the detector will trigger, default `0`
 - `onVisibilityChange` - callback, called when changed detector visibility
 - `children`
+
+Hook props
+----
+
+- `distance` - distance to the viewport at which the detector will trigger, default `0`
+- `onVisibilityChange` - callback, called when changed detector visibility
+- `targetRef` - ref to target element
 
 License
 ----
