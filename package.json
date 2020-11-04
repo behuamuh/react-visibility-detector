@@ -20,7 +20,8 @@
     "analyze": "size-limit --why"
   },
   "peerDependencies": {
-    "react": ">=16.8"
+    "react": ">=16.8",
+    "react-dom": ">=16.8"
   },
   "husky": {
     "hooks": {
@@ -35,6 +36,15 @@
   },
   "name": "react-visibility-detector",
   "author": "Behuamuh",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/behuamuh/react-visibility-detector.git"
+  },
+  "keywords": [
+    "react",
+    "react-component",
+    "visibility"
+  ],
   "module": "dist/react-visibility-detector.esm.js",
   "size-limit": [
     {
