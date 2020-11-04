@@ -61,5 +61,5 @@ export default (props: Props) => {
         observer.unobserve(targetRef.current);
       }
     };
-  }, [onVisibleCallback, targetRef.current]);
+  }, [onVisibleCallback, targetRef.current, distance]);
 };
