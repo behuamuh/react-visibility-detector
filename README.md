@@ -4,6 +4,8 @@ A React component that notifies you when it enters or exits the viewport.
 Based on a IntersectionObserver, resulting in improved performance.
 Not supported by IE and some others, see here - https://caniuse.com/?search=IntersectionObserver
 
+![GitHub package.json version](https://img.shields.io/github/package-json/v/behuamuh/react-visibility-detector) ![NPM](https://img.shields.io/npm/l/react-visibility-detector?color=green) ![npm bundle size](https://img.shields.io/bundlephobia/minzip/react-visibility-detector?color=green)
+
 Install
 ----
 
