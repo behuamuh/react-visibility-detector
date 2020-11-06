@@ -61,6 +61,11 @@ function MyComponent (props) {
 }
 ```
 
+Try it out
+----
+
+Run the [example](https://behuamuh.github.io/infinity-scroll-example/).
+
 Props
 ----
 
